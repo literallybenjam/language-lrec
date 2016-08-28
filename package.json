@@ -1,17 +1,16 @@
 {
-    "name": "language-lrec",
-    "version": "0.0.0",
-    "description": "LREC support for Atom",
-    "keywords": [
-        "language",
-        "LREC",
-        "grammar"
-    ],
-    "repository": "https://github.com/literallybenjam/language-lrec",
-    "license": "MIT",
-    "engines": {
-        "atom": ">=1.0.0 <2.0.0"
-    },
-    "dependencies": {
-    }
+  "name": "language-lrec",
+  "version": "0.1.0",
+  "description": "LREC support for Atom",
+  "keywords": [
+    "language",
+    "LREC",
+    "grammar"
+  ],
+  "repository": "https://github.com/literallybenjam/language-lrec",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
 }
