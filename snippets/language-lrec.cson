@@ -1,0 +1,32 @@
+'.text.lrec': {
+    'Metadata Record': {
+        'prefix': 'title'
+        'body': 'Title : ${1:Title}\nSubtitle : ${2:Subtitle}\nAuthor : ${3:Author}\nDate : ${4:1970-01-01}\nLanguage : ${5:en}\nDescription : ${5:Description}\nFrontmatter : ${6:index.html}\n%%'
+        'description': 'Provides information about the LREC document'
+        'descriptionMoreURL': 'https://github.com/literallybenjam/langdev/blob/master/documentation/standards/WD/0002.lsdoc'
+    }
+    'Tag-Group Record': {
+        'prefix': 'group'
+        'body': 'Group : ${1:Group Title}\nTag : ${2:Tag Name}\n%%'
+        'description': 'Groups together tags and tag-groups'
+        'descriptionMoreURL': 'https://github.com/literallybenjam/langdev/blob/master/documentation/standards/WD/0002.lsdoc'
+    }
+    'Lexeme Record': {
+        'prefix': 'lexeme'
+        'body': 'Lexeme : ${1:Word}\nAt : ${2:word.html}\nLanguage : ${3:en}\nPronunciation : ${4:/wəːd/}\nGloss : ${5:A word}\nTagged : ${6:Tag Name}\n%%'
+        'description': 'Defines a lexeme'
+        'descriptionMoreURL': 'https://github.com/literallybenjam/langdev/blob/master/documentation/standards/WD/0002.lsdoc'
+    }
+    'Inflection Record': {
+        'prefix': 'inflected'
+        'body': 'Inflected : ${1:Words}\nOf : ${2:Word}\nPronunciation : ${3:/wəːdz/}\n%%'
+        'description': 'Defines an inflected form for a lexeme'
+        'descriptionMoreURL': 'https://github.com/literallybenjam/langdev/blob/master/documentation/standards/WD/0002.lsdoc'
+    }
+    'Alternate Record': {
+        'prefix': 'alternate'
+        'body': 'Alternate : ${1:wəːd}\nFor : ${2:Word}\n%%'
+        'description': 'Defines an alternate form for a lexeme or inflection'
+        'descriptionMoreURL': 'https://github.com/literallybenjam/langdev/blob/master/documentation/standards/WD/0002.lsdoc'
+    }
+}
