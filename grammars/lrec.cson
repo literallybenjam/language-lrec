@@ -1,0 +1,46 @@
+'fileTypes': [
+    'lrec'
+]
+'name': 'LREC'
+'patterns': [
+    {
+        'name': 'meta.tag'
+        'begin': '^([^%].*?)?(?= : )'
+        'end': '^(?=.* : |%%$)'
+        'patterns': [
+            {
+                'match': '^([^%].*?)?( : )(.*)$'
+                'captures': {
+                    1: 'entity.name.tag'
+                    2: 'keyword.operator'
+                    3: 'string.unquoted'
+                }
+            }
+            {
+                'name': 'string.unquoted'
+                'match': '^:?([^:]|([^ ]:|:[^ ]))*:?$'
+            }
+            {
+                'name': 'comment.line.percent'
+                'match': '^%(?=%).*$'
+            }
+        ]
+    }
+    {
+        'name': 'comment.line.percent'
+        'match': '^%(?=%).*$'
+    }
+    {
+        'name': 'keyword.other'
+        'match': '^%%$'
+    }
+    {
+        'name': 'invalid.illegal'
+        'match': '^:?([^:]|([^ ]:|:[^ ]))*:?$'
+    }
+    {
+        'name': 'invalid.illegal'
+        'match': '^%%.+$'
+    }
+]
+'scopeName': 'text.lrec'
